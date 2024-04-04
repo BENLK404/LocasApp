@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="Home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <AnchorPane fx:id="home_window" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="67.0" layoutY="59.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane fx:id="bardetache" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-14.0" layoutY="56.0" prefHeight="602.0" prefWidth="212.0" styleClass="nav-form" stylesheets="@../styles/home.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-12.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="82.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="43.0" fitWidth="123.0" layoutX="39.0" layoutY="39.0">
+                                       <image>
+                                          <Image url="@../icons/logoLocas2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="23.0" layoutY="150.0" text="Bienvenue" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btn_dashbord" layoutX="17.0" layoutY="225.0" mnemonicParsing="false" onAction="#Dashbord" prefHeight="49.0" prefWidth="185.0" styleClass="nav-btn" stylesheets="@../styles/home.css" text="Dashboard" />
+                              <Button fx:id="btn_inventaire" layoutX="17.0" layoutY="280.0" mnemonicParsing="false" onAction="#OpenAbonne" prefHeight="49.0" prefWidth="185.0" styleClass="nav-btn" stylesheets="@../styles/home.css" text="Abonnés" />
+                              <Button fx:id="btn_menu" layoutX="17.0" layoutY="335.0" mnemonicParsing="false" onAction="#OpenCassette" prefHeight="49.0" prefWidth="185.0" styleClass="nav-btn" stylesheets="@../styles/home.css" text="Cassettes" />
+                              <Button fx:id="btn_editeur" layoutX="17.0" layoutY="389.0" mnemonicParsing="false" onAction="#OpenLocation" prefHeight="49.0" prefWidth="185.0" styleClass="nav-btn" stylesheets="@../styles/home.css" text="Locations" />
+                              <Button fx:id="btn_signout" layoutX="12.0" layoutY="541.0" minWidth="30.0" mnemonicParsing="false" onAction="#SignOut" prefHeight="30.0" prefWidth="32.0" styleClass="sign-out-btn" stylesheets="@../styles/home.css" text="Sign Out">
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0">
+                                       <image>
+                                          <Image url="@../icons/logOut.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label layoutX="60.0" layoutY="547.0" text="Sign Out" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="17.0" layoutY="449.0" mnemonicParsing="false" onAction="#OpenContact" prefHeight="49.0" prefWidth="185.0" styleClass="nav-btn" stylesheets="@../styles/home.css" text="Contact" />
+                              <ImageView layoutX="47.0" layoutY="240.0">
+                                 <image>
+                                    <Image url="@../icons/menuIcon_1.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="47.0" layoutY="295.0">
+                                 <image>
+                                    <Image url="@../icons/1x/abonnéIcon_1.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="47.0" layoutY="352.0">
+                                 <image>
+                                    <Image url="@../icons/1x/cassetteIcon2.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="47.0" layoutY="404.0">
+                                 <image>
+                                    <Image url="@../icons/1x/locationIcon_1.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="47.0" layoutY="464.0">
+                                 <image>
+                                    <Image url="@../icons/1x/contactIcon.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="104.0" layoutY="147.0" prefHeight="24.0" prefWidth="75.0" styleClass="nomAdmin" stylesheets="@../styles/home.css" text="ADMIN" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane fx:id="affichePane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="12.0" layoutY="56.0" prefHeight="128.0" prefWidth="872.0" stylesheets="@../styles/home.css" AnchorPane.bottomAnchor="418.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="56.0">
+                           <children>
+                              <AnchorPane layoutX="15.0" layoutY="13.0" prefHeight="100.0" prefWidth="206.0" stylesheets="@../styles/home.css">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="14.0" text="Total Cassettes" textFill="#fcfcfc">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="nb_casetteTotal" layoutX="86.0" layoutY="53.0" prefHeight="26.0" prefWidth="35.0" text="11K" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="cassette_info" />
+                                    <String fx:value="raduis" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutX="334.0" layoutY="12.0" prefHeight="100.0" prefWidth="206.0" stylesheets="@../styles/home.css">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="14.0" text="Total Abonnés" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="nb_abonneeTotal" layoutX="103.0" layoutY="50.0" prefHeight="26.0" prefWidth="35.0" text="8K" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="36.0" layoutX="142.0" layoutY="11.0">
+                                       <image>
+                                          <Image url="@../icons/1x/users2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="raduis" />
+                                    <String fx:value="cassette_info" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutX="654.0" layoutY="12.0" prefHeight="100.0" prefWidth="206.0" stylesheets="@../styles/home.css">
+                                 <children>
+                                    <Label layoutX="15.0" layoutY="14.0" text="Total Locations" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="nb_locationTotal" layoutX="103.0" layoutY="57.0" prefHeight="26.0" prefWidth="35.0" text="3K" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="25.0" fitWidth="34.0" layoutX="147.0" layoutY="9.0">
+                                       <image>
+                                          <Image url="@../icons/1x/locationIcon_1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="cassette_info" />
+                                    <String fx:value="raduis" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                           <styleClass>
+                              <String fx:value="raduis" />
+                              <String fx:value="white" />
+                              <String fx:value="shadow2" />
+                           </styleClass>
+                        </AnchorPane>
+                        <Label layoutX="19.0" layoutY="200.0" opacity="0.6" text="Clients">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="18.0" layoutY="466.0" prefHeight="115.0" prefWidth="425.0" stylesheets="@../styles/home.css">
+                           <styleClass>
+                              <String fx:value="white" />
+                              <String fx:value="raduis" />
+                           </styleClass>
+                           <children>
+                              <Label layoutX="-2.0" layoutY="-23.0" opacity="0.49" text="Dernirères locations">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <ListView fx:id="last_location_list" layoutX="68.0" layoutY="-69.0" prefHeight="115.0" prefWidth="211.0" style="-fx-background-color: blue;" styleClass="raduis" stylesheets="@../styles/home.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="214.0" AnchorPane.topAnchor="0.0" />
+                              <ListView fx:id="last_location_list1" layoutX="217.0" layoutY="1.0" prefHeight="115.0" prefWidth="211.0" style="-fx-background-color: yellow;" styleClass="raduis" stylesheets="@../styles/home.css" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="460.0" layoutY="466.0" prefHeight="115.0" prefWidth="425.0" stylesheets="@../styles/home.css">
+                           <styleClass>
+                              <String fx:value="white" />
+                              <String fx:value="raduis" />
+                           </styleClass>
+                           <children>
+                              <Label layoutX="1.0" layoutY="-24.0" opacity="0.49" text="Cassettes récentes">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ListView fx:id="last_location_list2" prefHeight="115.0" prefWidth="211.0" style="-fx-background-color: green;" styleClass="raduis" stylesheets="@../styles/home.css" />
+                              <ListView fx:id="last_location_list11" layoutX="216.0" prefHeight="115.0" prefWidth="211.0" style="-fx-background-color: red;" styleClass="raduis" stylesheets="@../styles/home.css" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="19.0" layoutY="28.0" opacity="0.6" text="Dashboard">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="178.0" layoutY="78.0">
+                           <image>
+                              <Image url="@../icons/1x/cassettes11.png" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane layoutX="12.0" layoutY="231.0" prefHeight="200.0" prefWidth="872.0" stylesheets="@../styles/connexion.css">
+                           <styleClass>
+                              <String fx:value="white" />
+                              <String fx:value="raduis" />
+                           </styleClass>
+                           <children>
+                              <AnchorPane layoutX="835.0" layoutY="-212.0" prefHeight="30.0" prefWidth="30.0" stylesheets="@../styles/home.css">
+                                 <styleClass>
+                                    <String fx:value="white" />
+                                    <String fx:value="raduis2" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <Group layoutX="619.0" layoutY="30.0">
+                           <children>
+                              <TextField fx:id="recherche" layoutX="-35.0" layoutY="-8.0" prefHeight="25.0" prefWidth="237.0" promptText="Recherchez ici..." styleClass="recherche" stylesheets="@../styles/home.css" />
+                              <Button fx:id="search_btn" layoutX="160.0" layoutY="-8.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="6.0" styleClass="btn_recherche" stylesheets="@../styles/home.css">
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../icons/rechercheIcon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </Group>
+                     </children>
+                     <styleClass>
+                        <String fx:value="gris" />
+                        <String fx:value="border" />
+                     </styleClass>
+                     <stylesheets>
+                        <URL value="@../styles/home.css" />
+                     </stylesheets>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

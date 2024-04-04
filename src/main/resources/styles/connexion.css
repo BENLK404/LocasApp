@@ -1,0 +1,48 @@
+.degrade{
+    -fx-background-color: linear-gradient(to bottom,#D79F6C, #b37231);
+}
+.leBlanc{
+    -fx-background-color: #fff;
+}
+.laCouleur{
+    -fx-background-color: #b37231;
+}
+.forgotConnexion{
+    -fx-background-color: transparent;
+    -fx-border-width: .5px;
+    -fx-border-color: #fff;
+    -fx-text-fill: #fff;
+    -fx-border-radius: 3px;
+}
+.forgotConnexion:hover{
+    -fx-background-color: #fff;
+    -fx-text-fill: #b37231;
+}
+.head-label{
+    -fx-border-color: #D79F6C;
+    -fx-border-width: 0 0 0 5px;
+    -fx-padding: 0 0 0 5px;
+}
+.login-btn{
+    -fx-background-color:
+            linear-gradient(to bottom,#D79F6C, #936837);
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 16px;
+}
+.login-btn:hover{
+    -fx-background-color: linear-gradient(to bottom, #cb7819,#D79F6C);
+    -fx-font-size: 20px;
+}
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right,#D79F6C, #cb7819);
+    -fx-border-width: .5px;
+}
+.text-field:focused{
+    -fx-border-width: 1px;
+}
+.yftyf-uy{
+    -fx-background-color: yellow;
+}

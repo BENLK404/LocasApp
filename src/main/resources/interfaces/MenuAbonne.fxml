@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dao.AbonneDAO">
+   <children>
+      <AnchorPane prefHeight="602.0" prefWidth="662.0" styleClass="gris" stylesheets="@../styles/home.css">
+         <children>
+            <AnchorPane layoutX="16.0" layoutY="67.0" prefHeight="215.0" prefWidth="869.0" styleClass="white" stylesheets="@../styles/home.css">
+               <children>
+                  <TableView fx:id="table_abonne" onMouseClicked="#AbonneSelect" prefHeight="215.0" prefWidth="869.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="abonne_col_id_abonne" prefWidth="146.0" text="N° Abonné" />
+                        <TableColumn fx:id="abonne_col_nom_abonne" prefWidth="148.66665649414062" text="Nom Abonné" />
+                        <TableColumn fx:id="abonne_col_prenom_abonne" minWidth="0.0" prefWidth="148.33334350585938" text="Prénom Abonné" />
+                        <TableColumn fx:id="abonne_col_adresse_abonne" prefWidth="151.33331298828125" text="Adresse Abonné" />
+                        <TableColumn fx:id="abonne_col_date_abm_abonne" minWidth="0.0" prefWidth="141.3333740234375" text="Date D'abonnement" />
+                        <TableColumn fx:id="abonne_col_date_entrer" minWidth="0.0" prefWidth="135.6666259765625" text="Date d'entré" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="414.0" layoutY="-10.0" opacity="0.28" prefHeight="42.0" prefWidth="113.0" styleClass="text-field-search" stylesheets="@../styles/home.css" text="Abonné" textFill="#b2844c">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="menuaffiche" layoutX="16.0" layoutY="301.0" prefHeight="150.0" prefWidth="868.0" stylesheets="@../styles/home.css">
+               <styleClass>
+                  <String fx:value="white" />
+                  <String fx:value="raduis" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </AnchorPane>
+            <TextField fx:id="search" layoutX="688.0" layoutY="21.0" prefHeight="32.0" prefWidth="194.0" promptText="Recherchez ici..." styleClass="recherche" stylesheets="@../styles/home.css" />
+            <TextField fx:id="id_abonne" layoutX="148.0" layoutY="337.0" promptText="id" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <TextField fx:id="nom_abonne" layoutX="146.0" layoutY="380.0" promptText="Nom" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <TextField fx:id="date_entre" layoutX="697.0" layoutY="334.0" promptText="AA/MM/JJ" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <TextField fx:id="date_abm" layoutX="698.0" layoutY="375.0" promptText="AA/MM/JJ" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <TextField fx:id="adresse_abonne" layoutX="433.0" layoutY="382.0" promptText="Lieu" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <TextField fx:id="prenom_abonne" layoutX="433.0" layoutY="337.0" promptText="prénom" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <Label layoutX="65.0" layoutY="339.0" text="N°Abonné :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="383.0" text="Nom :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="365.0" layoutY="341.0" text="Prénom :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="367.0" layoutY="384.0" text="Adresse :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="615.0" layoutY="378.0" text="Date ABM :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="604.0" layoutY="339.0" text="Date Entrée :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="844.0" layoutY="23.0" mnemonicParsing="false" onAction="#Search" prefHeight="26.0" prefWidth="6.0" styleClass="btn_recherche" stylesheets="@../styles/home.css">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../icons/rechercheIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane fx:id="menuaffiche1" layoutX="18.0" layoutY="466.0" prefHeight="129.0" prefWidth="869.0" stylesheets="@../styles/home.css">
+               <styleClass>
+                  <String fx:value="white" />
+                  <String fx:value="raduis" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </AnchorPane>
+            <Button layoutX="139.0" layoutY="513.0" mnemonicParsing="false" onAction="#addAbonneShowListData" onMouseClicked="#ResetAbonne" prefHeight="40.0" prefWidth="107.0" styleClass="abonne-btn" stylesheets="@../styles/home.css" text="Effacer" textFill="#d79f6c" />
+            <Button layoutX="298.0" layoutY="513.0" mnemonicParsing="false" onAction="#addAbonneShowListData" onMouseClicked="#SuprimerAbonne" prefHeight="40.0" prefWidth="107.0" styleClass="abonne-btn" stylesheets="@../styles/home.css" text="Suprimer" textFill="#d79f6c" />
+            <Button layoutX="510.0" layoutY="516.0" mnemonicParsing="false" onAction="#addAbonneShowListData" onMouseClicked="#ModifierAbonne" prefHeight="40.0" prefWidth="107.0" styleClass="abonne-btn" stylesheets="@../styles/home.css" text="Modifier" textFill="#d79f6c" />
+            <Button layoutX="661.0" layoutY="516.0" mnemonicParsing="false" onAction="#addAbonneShowListData" onMouseClicked="#AjouterAbonne" prefHeight="40.0" prefWidth="107.0" styleClass="abonne-btn" stylesheets="@../styles/home.css" text="Ajouter" textFill="#d79f6c" />
+         </children></AnchorPane>
+   </children>
+</StackPane>

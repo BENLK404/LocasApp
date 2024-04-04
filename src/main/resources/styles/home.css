@@ -1,0 +1,195 @@
+.nav-form{
+    -fx-background-color: linear-gradient(to bottom,#D79F6C, #b37231);
+    -fx-background-radius: 0 10px 0 0;
+
+}
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-background-radius: 5px 0 0 5px;
+}
+
+.nav-btn:hover{
+    -fx-background-color: #f3f2f2;
+    -fx-text-fill: #b37231;
+    -fx-font-size: 17px;
+
+}
+.sign-out-btn{
+    -fx-background-color: transparent ;
+    -fx-cursor: hand;
+    -fx-background-radius: 50%;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-max-height: 30px;
+    -fx-max-width: 30;
+}
+.sign-out-btn:hover{
+    -fx-background-color: #8f0404;
+}
+.white{
+    -fx-background-color: #fff;
+}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgb(133, 126, 126), 3,0,0,1);
+}
+.raduis{
+    -fx-background-radius: 8px;
+}
+.cassette_info{
+    -fx-background-color: #D79F6C;
+}
+
+.shadow2{
+    -fx-effect: dropshadow(three-pass-box, rgb(194, 182, 182), 8,0,0,0);
+}
+.text-field-search{
+    -fx-background-color: transparent;
+    -fx-border-width: .5px;
+    -fx-background-radius: 20px;
+
+}
+.gris{
+    -fx-background-color: #f3f2f2;
+}
+.border{
+    -fx-border-right-radius: 0;
+}
+.recherche{
+    -fx-background-color: #ffff;
+    -fx-border-color: transparent;
+    -fx-border-width: .5px;
+    -fx-background-radius: 20px;
+}
+.btn_recherche{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+
+}
+.menu_btn{
+    -fx-background-color: #ffff;
+    -fx-border-color: transparent;
+    -fx-border-width: .5px;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+
+}
+.menu_btn:hover{
+    -fx-background-color: #cb7819;
+    -fx-border-color: transparent;
+    -fx-border-width: .5px;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+}
+.menutext-field{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right,#D79F6C, #cb7819);
+    -fx-border-width: .5px;
+    -fx-border-radius: 3px;
+}
+.menutext-field:hover{
+    -fx-border-width: 1px;
+    -fx-border-radius: 0px;
+}
+.inventaire_btn{
+    -fx-background-color: #ffff;
+    -fx-border-width: .5px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 15;
+    -fx-text-fill: #D79F6C ;
+    -fx-font-weight: 500;
+    -fx-cursor: hand;
+
+}
+.inventaire_btn:hover{
+    -fx-background-color: #cb7819;
+    -fx-border-color: transparent;
+    -fx-border-width: .5px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 17;
+    -fx-text-fill: #fff ;
+    -fx-font-weight: 500;
+
+}
+.table-view{
+    -fx-background-color: transparent ;
+    -fx-border-radius: 10px;
+    -fx-padding: 0px;
+}
+.table-view .column-header-background{
+    -fx-background-color: #fff;
+    -fx-background-insets:0 0 0 0;
+    -fx-background-radius: 8px 8px 8px 8px;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: #D79F6C;
+    -fx-size: 40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill: #fff;
+
+}
+.color{
+    -fx-background-color: #c57416;
+}
+.abonne-btn{
+    -fx-border-width: .5px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 15;
+    -fx-text-fill: #fff ;
+    -fx-font-weight: 500;
+    -fx-background-color: #b6743b;
+    -fx-cursor: hand;
+}
+.abonne-btn:hover{
+    -fx-background-color: linear-gradient(to bottom, #cb7819,#D79F6C);
+    -fx-font-size: 20px;
+}
+.nomAdmin{
+    -fx-text-fill: #fff;
+    -fx-font-size: 17;
+    -fx-font-weight: 700;
+    -fx-border-width: .5px;
+}
+.raduis2 {
+    -fx-background-radius: 50%;
+
+}
+.contact-title{
+    -fx-text-fill: #2e2e2e;
+    -fx-font-size: 15;
+    -fx-font-weight: 600;
+}
+.contact-text{
+    -fx-text-fill: #b2acac;
+    -fx-font-size: 12;
+    -fx-font-weight: 700;
+
+}
+.list-view{
+    -fx-background-color: transparent;
+}
+.list-cell{
+    -fx-font-size: 13px;
+    -fx-text-fill: #504f4f;
+    -fx-font-weight: 600;
+    -fx-background-radius: 10px;
+
+
+}
+.notif-btn{
+    -fx-background-color: #fff;
+    -fx-background-radius: 50%;
+    -fx-cursor: hand;
+    -fx-max-width: 32px;
+    -fx-max-height: 32px;
+    -fx-min-width: 32px;
+    -fx-min-height: 32px;
+}
+.notif-btn:hover{
+    -fx-background-color:#cb7819 ;
+}

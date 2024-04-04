@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignInController">
+   <children>
+      <AnchorPane fx:id="connexion_window" prefHeight="447.0" prefWidth="630.0">
+         <children>
+            <AnchorPane fx:id="si_formGarde" layoutX="-1.0" prefHeight="403.0" prefWidth="300.0" styleClass="degrade">
+               <children>
+                  <Label layoutX="28.0" layoutY="208.0" text="Système de Location De Cassette Video" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="81.0" fitWidth="228.0" layoutX="36.0" layoutY="120.0">
+                     <image>
+                        <Image url="@../icons/logoLocas.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <stylesheets>
+                  <URL value="@../styles/connexion.css" />
+                  <URL value="@../styles/connexion.css" />
+               </stylesheets>
+            </AnchorPane>
+            <AnchorPane fx:id="si_formConnexion" layoutX="300.0" layoutY="5.0" prefHeight="400.0" prefWidth="300.0" styleClass="leblanc">
+               <children>
+                  <Label layoutX="44.0" layoutY="75.0" styleClass="head-label" text="Page de Connexion " textFill="#a46633">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="si_nomUtilisateur" layoutX="37.0" layoutY="156.0" onAction="#OpenHome" prefHeight="30.0" prefWidth="220.0" promptText="nom d'utilisateur" />
+                  <PasswordField fx:id="si_motDePasse" layoutX="37.0" layoutY="198.0" onAction="#OpenHome" prefHeight="30.0" prefWidth="220.0" promptText="mot de passe" />
+                  <Button fx:id="btn_connexion" layoutX="37.0" layoutY="269.0" mnemonicParsing="false" onAction="#OpenHome" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@../styles/connexion.css" text="Connexion" />
+                  <Hyperlink fx:id="si_motDePasseOublie" layoutX="38.0" layoutY="236.0" onAction="#OpenForgotPass" text="Mot de passe oublié?" textFill="#cd6b21" />
+               </children>
+               <stylesheets>
+                  <URL value="@../styles/connexion.css" />
+               </stylesheets>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

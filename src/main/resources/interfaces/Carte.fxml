@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CarteController">
+   <children>
+      <AnchorPane prefHeight="602.0" prefWidth="662.0">
+         <children>
+            <Label layoutX="417.0" layoutY="-7.0" opacity="0.28" prefHeight="42.0" prefWidth="70.0" styleClass="text-field-search" stylesheets="@../styles/home.css" text="Carte" textFill="#b2844c">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="119.0" layoutY="30.0" prefHeight="377.0" prefWidth="660.0" stylesheets="@../styles/home.css" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="119.0" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="30.0">
+               <styleClass>
+                  <String fx:value="white" />
+                  <String fx:value="shadow" />
+                  <String fx:value="raduis" />
+               </styleClass>
+               <children>
+                  <AnchorPane layoutX="23.0" layoutY="78.0" prefHeight="140.0" prefWidth="158.0">
+                     <stylesheets>
+                        <URL value="@../styles/home.css" />
+                        <URL value="@../styles/connexion.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="gris" />
+                        <String fx:value="raduis" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="205.0" layoutY="79.0" prefHeight="38.0" prefWidth="337.0" stylesheets="@../styles/home.css">
+                     <styleClass>
+                        <String fx:value="raduis" />
+                        <String fx:value="gris" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="545.0" layoutY="13.0" prefHeight="38.0" prefWidth="89.0" stylesheets="@../styles/home.css">
+                     <styleClass>
+                        <String fx:value="raduis" />
+                        <String fx:value="gris" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="25.0" layoutY="237.0" prefHeight="38.0" prefWidth="40.0" stylesheets="@../styles/home.css">
+                     <styleClass>
+                        <String fx:value="raduis" />
+                        <String fx:value="gris" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="203.0" layoutY="132.0" prefHeight="38.0" prefWidth="429.0" stylesheets="@../styles/home.css">
+                     <styleClass>
+                        <String fx:value="raduis" />
+                        <String fx:value="gris" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="203.0" layoutY="184.0" prefHeight="38.0" prefWidth="430.0" stylesheets="@../styles/home.css">
+                     <styleClass>
+                        <String fx:value="raduis" />
+                        <String fx:value="gris" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="21.0" layoutY="296.0" prefHeight="38.0" prefWidth="608.0" stylesheets="@../styles/home.css">
+                     <styleClass>
+                        <String fx:value="raduis" />
+                        <String fx:value="gris" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="141.0" layoutY="238.0" prefHeight="38.0" prefWidth="40.0" stylesheets="@../styles/home.css">
+                     <styleClass>
+                        <String fx:value="raduis" />
+                        <String fx:value="gris" />
+                     </styleClass>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button layoutX="400.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="119.0" styleClass="login-btn" text="Imprimer">
+               <font>
+                  <Font name="System Bold" size="1.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../styles/home.css" />
+                  <URL value="@../styles/connexion.css" />
+               </stylesheets>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</StackPane>

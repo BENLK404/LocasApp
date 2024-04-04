@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+   <children>
+      <AnchorPane prefHeight="602.0" prefWidth="662.0" styleClass="gris" stylesheets="@../styles/home.css">
+         <children>
+            <AnchorPane fx:id="menu_bar" layoutX="16.0" layoutY="29.0" prefHeight="240.0" prefWidth="869.0" stylesheets="@../styles/home.css">
+               <styleClass>
+                  <String fx:value="white" />
+                  <String fx:value="raduis" />
+                  <String fx:value="shadow2" />
+               </styleClass>
+               <children>
+                  <AnchorPane layoutX="19.0" layoutY="20.0" prefHeight="200.0" prefWidth="245.0" stylesheets="@../styles/home.css">
+                     <children>
+                        <Label layoutX="79.0" layoutY="10.0" prefHeight="48.0" prefWidth="117.0" text="Abonné" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="addabonné1" layoutX="50.0" layoutY="74.0" mnemonicParsing="false" onAction="#OpenAjouterAbonne" prefHeight="27.0" prefWidth="140.0" styleClass="menu_btn" stylesheets="@../styles/connexion.css" text="Ajouter" textFill="#b2844c" />
+                        <Button layoutX="50.0" layoutY="116.0" mnemonicParsing="false" onAction="#OpenModifierAbonne" prefHeight="27.0" prefWidth="141.0" styleClass="menu_btn" stylesheets="@../styles/connexion.css" text="Modifier" textFill="#b2844c" />
+                        <Button layoutX="50.0" layoutY="158.0" mnemonicParsing="false" onAction="#OpenSuprimerAbonne" prefHeight="27.0" prefWidth="143.0" styleClass="menu_btn" stylesheets="@../styles/connexion.css" text="Suprimer" textFill="#b2844c" />
+                        <ImageView fitHeight="32.0" fitWidth="23.0" layoutX="45.0" layoutY="14.0">
+                           <image>
+                              <Image url="@../icons/1x/abonnéIcon_1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <styleClass>
+                        <String fx:value="cassette_info" />
+                        <String fx:value="shadow" />
+                        <String fx:value="raduis" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="313.0" layoutY="20.0" prefHeight="200.0" prefWidth="245.0" stylesheets="@../styles/home.css">
+                     <children>
+                        <Label layoutX="92.0" layoutY="5.0" prefHeight="48.0" prefWidth="117.0" text="Cassette" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="54.0" layoutY="72.0" mnemonicParsing="false" onAction="#OpenAjouterCassette" prefHeight="27.0" prefWidth="145.0" styleClass="menu_btn" stylesheets="@../styles/connexion.css" text="Ajouter" textFill="#b2844c" />
+                        <Button layoutX="54.0" layoutY="114.0" mnemonicParsing="false" onAction="#OpenModifierCassette" prefHeight="27.0" prefWidth="144.0" styleClass="menu_btn" stylesheets="@../styles/connexion.css" text="Modififer" textFill="#b2844c" />
+                        <Button layoutX="54.0" layoutY="156.0" mnemonicParsing="false" onAction="#OpenSuprimerCassette" prefHeight="27.0" prefWidth="149.0" styleClass="menu_btn" stylesheets="@../styles/connexion.css" text="Suprimer" textFill="#b2844c" />
+                        <ImageView fitHeight="36.0" fitWidth="39.0" layoutX="43.0" layoutY="9.0">
+                           <image>
+                              <Image url="@../icons/1x/cassetteIcon_1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <styleClass>
+                        <String fx:value="cassette_info" />
+                        <String fx:value="shadow" />
+                        <String fx:value="raduis" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="609.0" layoutY="18.0" prefHeight="200.0" prefWidth="244.0" stylesheets="@../styles/home.css">
+                     <children>
+                        <Label layoutX="91.0" layoutY="9.0" prefHeight="48.0" prefWidth="117.0" text="Location" textFill="#fffbfb">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="52.0" layoutY="74.0" mnemonicParsing="false" onAction="#OpenAjouterLocation" prefHeight="27.0" prefWidth="148.0" styleClass="menu_btn" stylesheets="@../styles/connexion.css" text="Ajouter" textFill="#b2844c" />
+                        <Button layoutX="52.0" layoutY="116.0" mnemonicParsing="false" onAction="#OpenModifierLocation" prefHeight="27.0" prefWidth="148.0" styleClass="menu_btn" stylesheets="@../styles/connexion.css" text="Modifier" textFill="#b2844c" />
+                        <Button layoutX="52.0" layoutY="158.0" mnemonicParsing="false" onAction="#OpenSuprimerLocation" prefHeight="27.0" prefWidth="151.0" styleClass="menu_btn" stylesheets="@../styles/connexion.css" text="Suprimer" textFill="#b2844c" />
+                        <ImageView fitHeight="27.0" fitWidth="41.0" layoutX="41.0" layoutY="21.0">
+                           <image>
+                              <Image url="@../icons/1x/locationIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <styleClass>
+                        <String fx:value="cassette_info" />
+                        <String fx:value="raduis" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Label layoutX="414.0" layoutY="-10.0" opacity="0.28" prefHeight="42.0" prefWidth="76.0" styleClass="text-field-search" stylesheets="@../styles/home.css" text="Menu" textFill="#b2844c">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="menuaffiche" layoutX="16.0" layoutY="280.0" prefHeight="310.0" prefWidth="869.0" stylesheets="@../styles/home.css">
+               <styleClass>
+                  <String fx:value="white" />
+                  <String fx:value="raduis" />
+               </styleClass>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dao.CassetteDAO">
+   <children>
+      <AnchorPane prefHeight="602.0" prefWidth="662.0" styleClass="gris" stylesheets="@../styles/home.css">
+         <children>
+            <AnchorPane layoutX="16.0" layoutY="67.0" prefHeight="215.0" prefWidth="869.0" styleClass="white" stylesheets="@../styles/home.css">
+               <children>
+                  <TableView fx:id="table_cassette" onMouseClicked="#CassetteSelect" prefHeight="215.0" prefWidth="869.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="cassette_col_idcassette_cassette" prefWidth="141.3333282470703" text="N° Cassette" />
+                        <TableColumn fx:id="cassette_col_auteur_cassette" prefWidth="140.0" text="Auteur" />
+                        <TableColumn fx:id="cassette_col_categorie_cassette" minWidth="0.0" prefWidth="164.0" text="Catégorie" />
+                        <TableColumn fx:id="cassette_col_titre_cassette" prefWidth="138.0" text="Titre" />
+                        <TableColumn fx:id="cassette_col_duerr_cassette" minWidth="0.0" prefWidth="134.0" text="Durée" />
+                        <TableColumn fx:id="cassette_col_prix_cassette" prefWidth="151.0" text="Prix" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="414.0" layoutY="-10.0" opacity="0.28" prefHeight="42.0" prefWidth="110.0" styleClass="text-field-search" stylesheets="@../styles/home.css" text="Cassette" textFill="#b2844c">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="menuaffiche" layoutX="16.0" layoutY="301.0" prefHeight="150.0" prefWidth="868.0" stylesheets="@../styles/home.css">
+               <styleClass>
+                  <String fx:value="white" />
+                  <String fx:value="raduis" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </AnchorPane>
+            <TextField fx:id="search_cassette" layoutX="688.0" layoutY="21.0" prefHeight="32.0" prefWidth="194.0" promptText="Recherchez ici..." styleClass="recherche" stylesheets="@../styles/home.css" />
+            <Button fx:id="search_cassette_btn" layoutX="844.0" layoutY="23.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="6.0" styleClass="btn_recherche" stylesheets="@../styles/home.css">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../icons/rechercheIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane fx:id="menuaffiche1" layoutX="18.0" layoutY="466.0" prefHeight="129.0" prefWidth="869.0" stylesheets="@../styles/home.css">
+               <styleClass>
+                  <String fx:value="white" />
+                  <String fx:value="raduis" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </AnchorPane>
+            <Button layoutX="139.0" layoutY="513.0" mnemonicParsing="false" onMouseClicked="#ResetCassette" prefHeight="40.0" prefWidth="107.0" styleClass="abonne-btn" stylesheets="@../styles/home.css" text="Effacer" textFill="#d79f6c" />
+            <Button layoutX="298.0" layoutY="513.0" mnemonicParsing="false" onMouseClicked="#SuprimerCassette" prefHeight="40.0" prefWidth="107.0" styleClass="abonne-btn" stylesheets="@../styles/home.css" text="Suprimer" textFill="#d79f6c" />
+            <Button layoutX="510.0" layoutY="516.0" mnemonicParsing="false" onMouseClicked="#ModifierCassette" prefHeight="40.0" prefWidth="107.0" styleClass="abonne-btn" stylesheets="@../styles/home.css" text="Modifier" textFill="#d79f6c" />
+            <Button layoutX="661.0" layoutY="516.0" mnemonicParsing="false" onMouseClicked="#AjouterCassette" prefHeight="40.0" prefWidth="107.0" styleClass="abonne-btn" stylesheets="@../styles/home.css" text="Ajouter" textFill="#d79f6c" />
+            <TextField fx:id="id_cassette" layoutX="143.0" layoutY="336.0" prefHeight="27.0" prefWidth="151.0" promptText="Id" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <TextField fx:id="titre" layoutX="140.0" layoutY="381.0" promptText="titre" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <TextField fx:id="auteur_cassette" layoutX="416.0" layoutY="335.0" promptText="Nom" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <TextField fx:id="prix_cassette" layoutX="706.0" layoutY="336.0" promptText="Fcfa" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <TextField fx:id="dure_cassette" layoutX="706.0" layoutY="381.0" promptText="min" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <Label layoutX="56.0" layoutY="339.0" text="N°Cassette :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="381.0" text="Titre :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="355.0" layoutY="337.0" text="Auteur :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="659.0" layoutY="338.0" text="Prix :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="645.0" layoutY="380.0" text="Durée :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="libelle_categorie" layoutX="415.0" layoutY="381.0" promptText="Catégorie" styleClass="menutext-field" stylesheets="@../styles/home.css" />
+            <Label layoutX="334.0" layoutY="384.0" text="Catégorie :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</StackPane>
