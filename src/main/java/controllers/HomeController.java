@@ -32,7 +32,7 @@ public class HomeController implements Initializable {
     private AnchorPane home_window;
 
     @FXML
-    private Label nb_abonneeTotal;
+    private Label nb_abonneeTotal; 
 
     @FXML
     private Label nb_casetteTotal;
